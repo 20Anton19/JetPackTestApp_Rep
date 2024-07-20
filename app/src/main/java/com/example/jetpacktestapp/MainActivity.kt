@@ -33,12 +33,36 @@ class MainActivity : ComponentActivity() {
 fun MyTextStyle(){
     Row(
         modifier = Modifier
-            .background(Color.Blue).fillMaxSize(),
+            .background(Color.Blue)
+            .fillMaxSize(),
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.Center
+        horizontalArrangement = Arrangement.SpaceEvenly
     ) {
-        Text(text = "Газ ебейщ авава")
-        Text(text = "МИШК")
+        Column {
+            Text(text = "МИШК")
+        }
+        Column {
+            Text(text = "МИШК")
+        }
+        Column {
+            Text(text = "МИШК")
+        }
+    }
+    Row(
+        modifier = Modifier
+            .background(Color.Blue),
+        verticalAlignment = Alignment.Bottom,
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
+        Column {
+            Text(text = "МИШК")
+        }
+        Column {
+            Text(text = "МИШК")
+        }
+        Column {
+            Text(text = "МИШК")
+        }
     }
 
 }
