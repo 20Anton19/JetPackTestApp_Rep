@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -38,55 +39,215 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-                ListItem("Мишк","репер")
-            }
+            ListItem()
 
         }
     }
 }
 
 @Composable
-private fun ListItem(name: String, prof: String){
-    Card(
-        shape = RoundedCornerShape(20.dp),
-        elevation = CardDefaults.cardElevation(5.dp),
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(0.dp, 20.dp)
+private fun ListItem(){
+    Row(
+        modifier = Modifier.background(color = Color.Blue).fillMaxSize(),
+        horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Box(){
-            Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                Image(
-                    painter = painterResource(id = R.drawable.image),
-                    contentDescription = "image",
-                    contentScale = ContentScale.Crop,
-                    modifier = Modifier
-                        .padding(20.dp)
-                        .size(120.dp)
-                        .clip(CircleShape)
-                )
-                Column(horizontalAlignment = Alignment.End) {
-                    Text(text = name)
-                    Text(text = prof)
-                }
-            }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+        }
+        Column (
+            modifier = Modifier.background(color = Color.Blue).fillMaxHeight(),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
+            Image(painter = painterResource(id = R.drawable.image), contentDescription = "image")
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+    ListItem()
 }
 /*fun MyTextStyle(){
     Row(
